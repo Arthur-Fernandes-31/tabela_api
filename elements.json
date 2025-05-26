@@ -658,7 +658,7 @@
     "mass": 162.500,
     "electrons": "[Xe] 4f9 5d1 6s2",
     "category": "Lanthanides",
-    "row": 6,
+    "row": 8,
     "col": 12
   },
   {
@@ -1053,7 +1053,7 @@
     "row": 7,
     "col": 5
   },
- { 
+  {
     "number": 106,
     "symbol": "Sg",
     "name": "Seabórgio",
@@ -1071,7 +1071,7 @@
     "electrons": "[Rn] 5f14 6d5 7s2",
     "category": "Transition metals",
     "row": 7,
-    "col": 6
+    "col": 7
   },
   {
     "number": 108,
@@ -1081,7 +1081,7 @@
     "electrons": "[Rn] 5f14 6d6 7s2",
     "category": "Transition metals",
     "row": 7,
-    "col": 7
+    "col": 8
   },
   {
     "number": 109,
@@ -1091,7 +1091,7 @@
     "electrons": "[Rn] 5f14 6d7 7s2",
     "category": "Transition metals",
     "row": 7,
-    "col": 8
+    "col": 9
   },
   {
     "number": 110,
@@ -1101,7 +1101,7 @@
     "electrons": "[Rn] 5f14 6d9 7s1",
     "category": "Transition metals",
     "row": 7,
-    "col": 9
+    "col": 10
   },
   {
     "number": 111,

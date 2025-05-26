@@ -1,59 +1,144 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   background: #f4f4f4;
   padding: 20px;
 }
+
 h1 {
   text-align: center;
   margin-bottom: 20px;
 }
 
+/* Grid da tabela periódica */
 #periodic-table {
   display: grid;
-  /* 18 colunas, 9 linhas (7 principais + 2 faixas f) */
-  grid-template-columns: repeat(18, 60px);
-  grid-template-rows: repeat(9, 60px);
+  grid-template-columns: repeat(18, 70px);
+  grid-auto-rows: 70px;
   gap: 4px;
   justify-content: center;
 }
 
+
+/* Célula de elemento */
 .element {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  padding: 4px;
   cursor: pointer;
   color: #fff;
   font-size: 12px;
   border: 1px solid #ccc;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
-.symbol { font-size: 16px; font-weight: bold; }
-.element:hover { opacity: 0.8; }
+
+.element .number {
+  font-size: 10px;
+}
+
+.element .symbol {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.element .name {
+  font-size: 8px;
+  text-transform: capitalize;
+  margin-top: 4px;
+  color: inherit;
+}
+
+.element .mass {
+  font-size: 8px;
+  margin-top: 2px;
+  color: inherit;
+}
+
+.element:hover {
+  opacity: 0.8;
+}
 
 /* Cores por categoria */
-.Metais-Alcalinos            { background: #f28b82; }
-.Metais-Alcalino-terrosos    { background: #fbbc04; }
-.Metaloides                  { background: #fff475; color: #000; }
-.Nao-metais                  { background: #ccff90; color: #000; }
-.Halogênios                  { background: #a7ffeb; color: #000; }
-.Gases-Nobres                { background: #d7aefb; }
-.Transition-metals           { background: #aecbfa; }
-.Post-transition-metals      { background: #e8eaed; color: #000; }
-.Lanthanides                 { background: #fdcfe8; color: #000; }
-.Actinides                   { background: #e6c9a8; color: #000; }
+.Metais-Alcalinos,
+.Metais-Alcalino-terrosos {
+  background: #FFF176;      /* amarelo claro */
+  color: #000;
+}
+
+.Transition-metals {
+  background: #EF5350; /* ou qualquer outra cor bem visível */
+  color: #fff;         /* ou #000 se for uma cor clara */
+}
+
+.Post-transition-metals {
+  background: #90CAF9;      /* azul claro */
+  color: #000;
+}
+
+.Metaloides {
+  background: #A5D6A7;      /* verde médio */
+  color: #000;
+}
+
+.Nao-metais {
+  background: #C8E6C9;      /* verde claro */
+  color: #000;
+}
+
+.Halogênios {
+  background: #B39DDB;      /* lilás */
+  color: #000;
+}
+
+.Gases-Nobres {
+  background: #81D4FA;      /* azul água */
+  color: #000;
+}
+
+.Lanthanides,
+.Actinides {
+  background: #B3E5FC;      /* azul bem claro */
+  color: #000;
+}
 
 /* Modal */
-#modal.hidden { display: none; }
-#modal {
-  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.6);
-  display: flex; align-items: center; justify-content: center;
+#modal.hidden {
+  display: none;
 }
+
+#modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #modal-content {
-  background: #fff; padding: 20px; border-radius: 8px; width: 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
   position: relative;
 }
-#modal-close { position: absolute; top: 8px; right: 12px; cursor: pointer; font-size: 20px; }
+
+#modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 

@@ -15,7 +15,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Grid da tabela periódica */
+
 #periodic-table {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
@@ -71,46 +71,46 @@ h1 {
 /* Cores por categoria */
 .Metais-Alcalinos,
 .Metais-Alcalino-terrosos {
-  background: #F9A825; /* Amarelo escuro */
+  background: #F9A825;
   color: #ffffff;
 }
 
 .Transition-metals {
-  background: #EF5350; /* Mantém vermelho vibrante */
+  background: #EF5350;
   color: #fff;
 }
 
 .Post-transition-metals {
-  background: #42A5F5; /* Azul mais escuro */
+  background: #42A5F5;
   color: #fff;
 }
 
 .Metaloides {
-  background: #66BB6A; /* Verde médio */
+  background: #66BB6A;
   color: #fff;
 }
 
-/* Altera a cor de fundo de todos os “Não‐metais” (classe gerada N-o-metais) */
+
 .N-o-metais {
-  background-color: #6db970; /* escolha a cor que preferir */
-  color: #fff;               /* texto branco para contraste */
+  background-color: #6db970; 
+  color: #fff;               
 }
 
-/* Ativa uma cor de fundo para todos os halogênios */
+
 .Halog-nios {
-  background-color: #7794cf; /* escolha a cor que preferir */
-  color: #fff;              /* texto branco para melhor contraste */
+  background-color: #7794cf;
+  color: #fff;
 }
 
 
 .Gases-Nobres {
-  background: #0288D1; /* Azul médio escuro */
+  background: #0288D1;
   color: #fff;
 }
 
 .Lanthanides,
 .Actinides {
-  background: #00796B; /* Verde-petróleo escuro */
+  background: #00796B;
   color: #fff;
 }
 

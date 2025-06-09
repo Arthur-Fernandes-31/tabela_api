@@ -18,11 +18,12 @@ h1 {
 /* Grid da tabela periódica */
 #periodic-table {
   display: grid;
-  grid-template-columns: repeat(18, 70px);
-  grid-auto-rows: 70px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-auto-rows: minmax(50px, auto);
   gap: 4px;
-  justify-content: center;
 }
+
+
 
 
 /* Célula de elemento */
@@ -70,45 +71,49 @@ h1 {
 /* Cores por categoria */
 .Metais-Alcalinos,
 .Metais-Alcalino-terrosos {
-  background: #FFF176;      /* amarelo claro */
-  color: #000;
+  background: #F9A825; /* Amarelo escuro */
+  color: #ffffff;
 }
 
 .Transition-metals {
-  background: #EF5350; /* ou qualquer outra cor bem visível */
-  color: #fff;         /* ou #000 se for uma cor clara */
+  background: #EF5350; /* Mantém vermelho vibrante */
+  color: #fff;
 }
 
 .Post-transition-metals {
-  background: #90CAF9;      /* azul claro */
-  color: #000;
+  background: #42A5F5; /* Azul mais escuro */
+  color: #fff;
 }
 
 .Metaloides {
-  background: #A5D6A7;      /* verde médio */
-  color: #000;
+  background: #66BB6A; /* Verde médio */
+  color: #fff;
 }
 
-.Nao-metais {
-  background: #9eefa1;      /* verde claro */
-  color: #000;
+/* Altera a cor de fundo de todos os “Não‐metais” (classe gerada N-o-metais) */
+.N-o-metais {
+  background-color: #6db970; /* escolha a cor que preferir */
+  color: #fff;               /* texto branco para contraste */
 }
 
-.Halogênios {
-  background: #B39DDB;      /* lilás */
-  color: #000;
+/* Ativa uma cor de fundo para todos os halogênios */
+.Halog-nios {
+  background-color: #7794cf; /* escolha a cor que preferir */
+  color: #fff;              /* texto branco para melhor contraste */
 }
+
 
 .Gases-Nobres {
-  background: #81D4FA;      /* azul água */
-  color: #000;
+  background: #0288D1; /* Azul médio escuro */
+  color: #fff;
 }
 
 .Lanthanides,
 .Actinides {
-  background: #B3E5FC;      /* azul bem claro */
-  color: #000;
+  background: #00796B; /* Verde-petróleo escuro */
+  color: #fff;
 }
+
 
 /* Modal */
 #modal.hidden {
@@ -140,5 +145,57 @@ h1 {
   cursor: pointer;
   font-size: 20px;
 }
+
+ h1,
+ h2 {
+     color: #333;
+ }
+
+ .section {
+     border: 1px solid #ccc;
+     border-radius: 8px;
+     padding: 16px;
+     margin-bottom: 20px;
+ }
+
+ .formula {
+     background: #f9f9f9;
+     padding: 8px;
+     border-radius: 4px;
+     font-family: monospace;
+ }
+
+ .calculator {
+     margin-top: 12px;
+ }
+
+ label {
+     display: block;
+     margin-bottom: 6px;
+ }
+
+ input[type="number"] {
+     width: 100%;
+     padding: 6px;
+     margin-bottom: 10px;
+ }
+
+ button {
+     padding: 8px 12px;
+     border: none;
+     border-radius: 4px;
+     background: #007BFF;
+     color: #fff;
+     cursor: pointer;
+ }
+
+ button:hover {
+     background: #0056b3;
+ }
+
+ .result {
+     margin-top: 10px;
+     font-weight: bold;
+ }
 
 
